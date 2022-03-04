@@ -19,7 +19,6 @@ function Search({ value, setValue, details, setDetails }) {
                 Audio: dictionary.phonetics[0].audio,
                 PartOfSpeech: [
                   dictionary.meanings[0].partOfSpeech,
-                  " ",
                   dictionary.meanings[1].partOfSpeech,
                 ],
                 nounMeaning: [

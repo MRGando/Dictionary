@@ -31,7 +31,10 @@ function Information({ details }) {
                 onClick={() => playAudio(audioClip)}
               />
             </div>
-            <p className="_partOfSpeech">{details.PartOfSpeech}</p>
+            <p className="_partOfSpeech">
+              {details.PartOfSpeech[0] !== "" ? details.PartOfSpeech[0] : ""} .
+              {details.PartOfSpeech[1] !== "" ? details.PartOfSpeech[1] : ""}
+            </p>
             <div className="_information_body">
               <div className="noun">
                 {details.PartOfSpeech[0] ? (
@@ -44,9 +47,9 @@ function Information({ details }) {
                 {ifExists("_meaning", 3, details.nounMeaning[2])}
               </div>
               <div className="verb">
-                {details.PartOfSpeech[2] ? (
+                {details.PartOfSpeech[1] ? (
                   <p className="_definitionTitle">
-                    Definition: ({details.PartOfSpeech[2]})
+                    Definition: ({details.PartOfSpeech[1]})
                   </p>
                 ) : null}
                 {ifExists("_meaning", 1, details.verbMeaning[0])}

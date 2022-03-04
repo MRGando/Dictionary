@@ -86,6 +86,21 @@ body {
   z-index: -1;
 }
 
+.head::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0.5;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  width: 115%;
+  height: 200px;
+  background-color: #c09b3f;
+  border-radius: 50%;
+  z-index: -1;
+}
+
 .main {
   color: black;
   padding: 30px 2em;
@@ -137,27 +152,27 @@ body {
 }
 
 ::-webkit-input-placeholder {
-  color: #6c8ee6;
+  color: #3f64c0;
   opacity: 1;
 }
 
 :-ms-input-placeholder {
-  color: #6c8ee6;
+  color: #3f64c0;
   opacity: 1;
 }
 
 ::-ms-input-placeholder {
-  color: #6c8ee6;
+  color: #3f64c0;
   opacity: 1;
 }
 
 ::placeholder {
-  color: #6c8ee6;
+  color: #3f64c0;
   opacity: 1;
 }
 
 ::-moz-placeholder {
-  color: #6c8ee6;
+  color: #3f64c0;
 }
 
 ._information_top {
