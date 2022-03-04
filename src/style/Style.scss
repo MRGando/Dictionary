@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+//fonts
+$_enFont: "Roboto Condensed", sans-serif;
+$_enSpecialFont: "Lobster", cursive;
+//colors
+$_headColor: #3f64c0;
+$_bodyColor: #c09b3f;
+$_whiteColor: whitesmoke;
+$_grayWhite: rgb(202, 202, 202);
+
+* {
+  outline: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: $_enFont;
+  background-color: $_bodyColor;
+  overflow: hidden;
+}
+.container {
+  width: 100%;
+  height: auto;
+  padding: 5em 0;
+  z-index: 2;
+
+  span {
+    font-size: 60px;
+    font-family: $_enSpecialFont;
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 2;
+  }
+
+  input[type="text"] {
+    background-color: transparent;
+    border: none;
+    color: $_headColor;
+    border-bottom: 3px solid $_headColor;
+    margin-top: 40px;
+    font-size: 15px;
+    padding-bottom: 8px;
+    font-weight: bold;
+    z-index: 2;
+  }
+}
+.head {
+  z-index: 2;
+  background-color: $_headColor;
+  color: $_whiteColor;
+  position: relative;
+  overflow: hidden;
+}
+.head::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  width: 130%;
+  height: 200px;
+  background-color: #c09b3f;
+  border-radius: 50%;
+  z-index: -1;
+}
+.main {
+  color: black;
+  padding: 30px 2em;
+  z-index: 2;
+
+  ._word {
+    font-size: 30px;
+    color: $_headColor;
+    font-weight: bold;
+    z-index: 2;
+    z-index: 2;
+  }
+  ._phonetic {
+    margin-right: 5px;
+    z-index: 2;
+  }
+  ._audio {
+    color: $_headColor;
+    cursor: pointer;
+    z-index: 2;
+  }
+}
+._information_body {
+  z-index: 2;
+  margin-top: 30px;
+  p {
+    margin-top: 5px;
+  }
+  ._meaning,
+  ._example {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  ._definitionTitle {
+    color: $_headColor;
+    font-weight: bold;
+  }
+  ._exampleTitle {
+    color: $_headColor;
+    font-weight: bold;
+  }
+}
+::placeholder {
+  color: $_headColor;
+  opacity: 1;
+}
+::-moz-placeholder {
+  color: $_headColor;
+}
+._information_top {
+  display: flex;
+}

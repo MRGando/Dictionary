@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #c09b3f;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  padding: 5em 0;
+  z-index: 2;
+}
+
+.container span {
+  font-size: 60px;
+  font-family: "Lobster", cursive;
+}
+
+.container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.container input[type="text"] {
+  background-color: transparent;
+  border: none;
+  color: #3f64c0;
+  border-bottom: 3px solid #3f64c0;
+  margin-top: 40px;
+  font-size: 15px;
+  padding-bottom: 8px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.head {
+  z-index: 2;
+  background-color: #3f64c0;
+  color: whitesmoke;
+  position: relative;
+  overflow: hidden;
+}
+
+.head::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 10%);
+          transform: translate(-50%, 10%);
+  width: 130%;
+  height: 200px;
+  background-color: #c09b3f;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.main {
+  color: black;
+  padding: 30px 2em;
+  z-index: 2;
+}
+
+.main ._word {
+  font-size: 30px;
+  color: #3f64c0;
+  font-weight: bold;
+  z-index: 2;
+  z-index: 2;
+}
+
+.main ._phonetic {
+  margin-right: 5px;
+  z-index: 2;
+}
+
+.main ._audio {
+  color: #3f64c0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+._information_body {
+  z-index: 2;
+  margin-top: 30px;
+}
+
+._information_body p {
+  margin-top: 5px;
+}
+
+._information_body ._meaning,
+._information_body ._example {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+._information_body ._definitionTitle {
+  color: #3f64c0;
+  font-weight: bold;
+}
+
+._information_body ._exampleTitle {
+  color: #3f64c0;
+  font-weight: bold;
+}
+
+::-webkit-input-placeholder {
+  color: #3f64c0;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #3f64c0;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  color: #3f64c0;
+  opacity: 1;
+}
+
+::placeholder {
+  color: #3f64c0;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  color: #3f64c0;
+}
+
+._information_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=Style.css.map */
