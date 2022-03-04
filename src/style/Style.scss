@@ -18,7 +18,14 @@ $_grayWhite: rgb(202, 202, 202);
 body {
   font-family: $_enFont;
   background-color: $_bodyColor;
-  overflow: hidden;
+  overflow-x: hidden;
+}
+.icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  z-index: 3;
 }
 .container {
   width: 100%;
@@ -113,12 +120,28 @@ body {
   }
 }
 ::placeholder {
-  color: $_headColor;
+  color: #6c8ee6;
   opacity: 1;
 }
 ::-moz-placeholder {
-  color: $_headColor;
+  color: #6c8ee6;
 }
 ._information_top {
   display: flex;
+}
+p {
+  max-width: 500px;
+  text-align: justify;
+}
+@media only screen and (min-width: 860px) {
+  .container_two {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .info_content {
+    width: 500px;
+  }
 }

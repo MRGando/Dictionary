@@ -11,7 +11,15 @@
 body {
   font-family: "Roboto Condensed", sans-serif;
   background-color: #c09b3f;
-  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  z-index: 3;
 }
 
 .container {
@@ -129,32 +137,59 @@ body {
 }
 
 ::-webkit-input-placeholder {
-  color: #3f64c0;
+  color: #6c8ee6;
   opacity: 1;
 }
 
 :-ms-input-placeholder {
-  color: #3f64c0;
+  color: #6c8ee6;
   opacity: 1;
 }
 
 ::-ms-input-placeholder {
-  color: #3f64c0;
+  color: #6c8ee6;
   opacity: 1;
 }
 
 ::placeholder {
-  color: #3f64c0;
+  color: #6c8ee6;
   opacity: 1;
 }
 
 ::-moz-placeholder {
-  color: #3f64c0;
+  color: #6c8ee6;
 }
 
 ._information_top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+p {
+  max-width: 500px;
+  text-align: justify;
+}
+
+@media only screen and (min-width: 860px) {
+  .container_two {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .info_content {
+    width: 500px;
+  }
 }
 /*# sourceMappingURL=Style.css.map */
